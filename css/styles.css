@@ -116,12 +116,19 @@ img {
     padding-top: 188px;
     padding-bottom: 188px;
     background-image:
-    linear-gradient(rgba(46, 47, 66, 0.70) , rgba(46, 47, 66, 0.70)), url(../images/hero-background.jpg);
+    linear-gradient(rgba(46, 47, 66, 0.70) , rgba(46, 47, 66, 0.70)), url(../images/background-image-desktop.jpg);
     background-size: cover;
     background-position: center;
     max-width: 1440px;
     margin: 0 auto;
     background-repeat: no-repeat;
+}
+
+@media screen and (min-resolution: 192dpi){
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70) , rgba(46, 47, 66, 0.70)), url(../images/background-image-desktop@2x.jpg);
+    }
+    
 }
 
 .hero-title {color: #FFF;
