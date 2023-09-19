@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 767px) {
-    .menu {
+        .menu {
             display: none;
         }
     
@@ -160,6 +160,11 @@
         padding: 25.5px 0;
         margin-right: 120px;
     }
+    .menu {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between
+        }
 }
 
 .header {
@@ -180,11 +185,6 @@
     align-items: center;
 }
 
-.menu {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between
-}
 
 .navigation-link {
     display: block;
