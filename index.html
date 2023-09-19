@@ -14,7 +14,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./css/index.css"
+      <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
   </head>
 
   <body>
@@ -51,18 +57,28 @@
             </li>
           </ul>
         </address>
+        <button class="open-mobile-menu-btn">
+          <svg
+            class="open-mobile-menu-icon"
+            width="24"
+            height="24"
+            aria-label="mobile menu open icon"
+          >
+            <use href="/images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!-- HERO Section -->
-      <section class="hero-section">
+      <!-- <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
-      </section>
+      </section> -->
       <!-- Section 2 -->
-      <section class="features">
+      <!-- <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Section 2</h2>
           <ul class="features-list">
@@ -144,14 +160,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Section 3 -->
-      <section class="team-section">
+      <!-- <section class="team-section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/team/mark-guerrero@2x.jpg 2x"
                 src="./images/team/mark-guerrero.jpg"
                 alt="Photo by Mark Guerrero"
                 width="264"
@@ -213,6 +230,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team/tom-ford@2x.jpg 2x"
                 src="./images/team/tom-ford.jpg"
                 alt="Photo by Tom Ford"
                 width="264"
@@ -274,6 +292,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team/camila-garcia@2x.jpg 2x"
                 src="./images/team/camila-garcia.jpg"
                 alt="Photo by Camila Garcia"
                 width="264"
@@ -335,6 +354,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team/daniel-wilson@2x.jpg 2x"
                 src="./images/team/daniel-wilson.jpg"
                 alt="Photo by Daniel Wilson"
                 width="264"
@@ -396,17 +416,26 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Section 4 -->
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-item-wrapper">
                 <img
-                  src="./images/portfolio/bank-app-desktop.jpg"
+                  srcset="
+                    ./images/portfolio/bank-app-mobile.jpg     288w,
+                    ./images/portfolio/bank-app-mobile@2x.jpg  576w,
+                    ./images/portfolio/bank-app-tablet.jpg     356w,
+                    ./images/portfolio/bank-app-tablet@2x.jpg  712w,
+                    ./images/portfolio/bank-app-desktop.jpg    360w,
+                    ./images/portfolio/bank-app-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/bank-app-mobile.jpg"
                   alt="Banking App"
                   width="360"
                 />
@@ -425,7 +454,16 @@
             <li class="portfolio-item">
               <div class="portfolio-item-wrapper">
                 <img
-                  src="./images/portfolio/cashless-desktop.jpg"
+                  srcset="
+                    ./images/portfolio/cashless-mobile.jpg     288w,
+                    ./images/portfolio/cashless-mobile@2x.jpg  576w,
+                    ./images/portfolio/cashless-tablet.jpg     356w,
+                    ./images/portfolio/cashless-tablet@2x.jpg  712w,
+                    ./images/portfolio/cashless-desktop.jpg    360w,
+                    ./images/portfolio/cashless-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/cashless-mobile.jpg"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -444,7 +482,16 @@
             <li class="portfolio-item">
               <div class="portfolio-item-wrapper">
                 <img
-                  src="./images/portfolio/meditation-app-desktop.jpg"
+                  srcset="
+                    ./images/portfolio/meditation-app-mobile.jpg     288w,
+                    ./images/portfolio/meditation-app-mobile@2x.jpg  576w,
+                    ./images/portfolio/meditation-app-tablet.jpg     356w,
+                    ./images/portfolio/meditation-app-tablet@2x.jpg  712w,
+                    ./images/portfolio/meditation-app-desktop.jpg    360w,
+                    ./images/portfolio/meditation-app-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/meditation-app-mobile.jpg"
                   alt="Meditation App"
                   width="360"
                 />
@@ -463,7 +510,16 @@
             <li class="portfolio-item">
               <div class="portfolio-item-wrapper">
                 <img
-                  src="./images/portfolio/taxi-desktop.jpg"
+                  srcset="
+                    ./images/portfolio/taxi-mobile.jpg     288w,
+                    ./images/portfolio/taxi-mobile@2x.jpg  576w,
+                    ./images/portfolio/taxi-tablet.jpg     356w,
+                    ./images/portfolio/taxi-tablet@2x.jpg  712w,
+                    ./images/portfolio/taxi-desktop.jpg    360w,
+                    ./images/portfolio/taxi-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/taxi-mobile.jpg"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -482,7 +538,16 @@
             <li class="portfolio-item">
               <div class="portfolio-item-wrapper">
                 <img
-                  src="./images/portfolio/screen-desktop.jpg"
+                  srcset="
+                    ./images/portfolio/screen-mobile.jpg     288w,
+                    ./images/portfolio/screen-mobile@2x.jpg  576w,
+                    ./images/portfolio/screen-tablet.jpg     356w,
+                    ./images/portfolio/screen-tablet@2x.jpg  712w,
+                    ./images/portfolio/screen-desktop.jpg    360w,
+                    ./images/portfolio/screen-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/screen-mobile.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -501,7 +566,16 @@
             <li class="portfolio-item">
               <div class="portfolio-item-wrapper">
                 <img
-                  src="./images/portfolio/online-courses-desktop.jpg"
+                  srcset="
+                    ./images/portfolio/online-courses-mobile.jpg     288w,
+                    ./images/portfolio/online-courses-mobile@2x.jpg  576w,
+                    ./images/portfolio/online-courses-tablet.jpg     356w,
+                    ./images/portfolio/online-courses-tablet@2x.jpg  712w,
+                    ./images/portfolio/online-courses-desktop.jpg    360w,
+                    ./images/portfolio/online-courses-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/online-courses-mobile.jpg"
                   alt="Online Courses"
                   width="360"
                 />
@@ -519,11 +593,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-wrapper">
         <div class="footer-info">
           <a class="footer-logo" href="./index.html"
@@ -608,10 +682,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Backdrop with modal window-->
-    <div class="backdrop">
+    <!-- <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg class="modal-btn-close-icon" width="8" height="8">
@@ -715,7 +789,71 @@
           <button class="contact-form-btn">Send</button>
         </form>
       </div>
+    </div> -->
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu is-open">
+      <button class="close-mobile-menu-btn">
+        <svg
+          class="close-mobile-menu-icon"
+          width="8"
+          height="8"
+          aria-label="mobile menu close icon"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item current">Studio</li>
+          <li class="mobile-menu-item">Portfolio</li>
+          <li class="mobile-menu-item">Contacts</li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-contacts">
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li class="mobile-menu-address-item">
+              <a class="mobile-menu-address-link accent" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a</li>
+            <li>
+              <a class="mobile-menu-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+        </address>
+
+        <div class="mobile-menu-social">
+          <ul class="mobile-menu-social-list">
+            <li class="mobile-menu-social-item">
+              <a class="mobile-menu-social-link" href="#">
+                <svg class="mobile-menu-social-icon" aria-label="instagram icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a class="mobile-menu-social-link" href="#">
+                <svg class="mobile-menu-social-icon" aria-label="twitter icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a class="mobile-menu-social-link" href="#">
+                <svg class="mobile-menu-social-icon" aria-label="facebook icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a class="mobile-menu-social-link" href="#">
+                <svg class="mobile-menu-social-icon" aria-label="linkedin icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
-
