@@ -1,5 +1,6 @@
 /* UTILS */
 @import './utils/visually-hidden.css';
+@import './utils/backdrop.css';
 
 /* BASE */
 @import './base/common.css';
@@ -12,3 +13,4 @@
 @import './layout/section-3.css';
 @import "./layout/section-4.css";
 @import './layout/footer.css';
+@import './layout/modal.css';
