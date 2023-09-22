@@ -1,8 +1,8 @@
 .modal {
     position: absolute;
-    top: 8px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 288px;
     min-height: 623px;
     padding: 72px 16px 24px 16px;
@@ -173,9 +173,6 @@
 
 @media screen and (min-width: 768px) {
     .modal {
-        top: 96px;
-        left: 50%;
-        transform: translateX(-50%);
         width: 408px;
         min-height: 584px;
         padding: 72px 24px 24px 24px;
@@ -183,12 +180,6 @@
 }
 
 @media screen and (min-width: 1158px) {
-    .modal {
-        top: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     .modal-btn-close:hover,
     .modal-btn-close:focus {
         background-color: #404bbf;

@@ -1,7 +1,12 @@
+/* MOBILE (MAX-WIDTH: 767px) */
+
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background: #2E2F42;
+}
+.footer-info {
+    margin-bottom: 72px;
 }
 .footer-logo {
     display: block;
@@ -23,6 +28,8 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.footer-social {
     margin-bottom: 72px;
 }
 .footer-social-text {
@@ -39,7 +46,6 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 72px;
 }
 
 .footer-social-item {
@@ -89,12 +95,13 @@
     background-color: transparent;
 }
 
-.footer-form-email-wrap input::placeholder {
+.footer-form-input::placeholder {
     color: #FFF;
     font-size: 12px;
     font-weight: 400;
     line-height: 2;
     letter-spacing: 0.04em;
+    opacity: 0,6;
 }
 .footer-form-btn {
     width: 165px;
@@ -117,11 +124,15 @@
 .footer-form-button-icon {
     fill: #FFFFFF;
 }
+/* TABLET (MIN-WIDTH: 768px) */
+
 @media screen and (min-width: 768px) {
     .footer {
-        padding: 100px 96px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
     .footer-wrapper {
+        width: 584px;
         display: flex;
         flex-wrap: wrap;
         gap: 72px;
@@ -139,6 +150,12 @@
     .footer-logo {
         text-align: start;
     }
+    .footer-social {
+        margin-bottom: 0;
+    }
+    .footer-info {
+        margin-bottom: 0;
+    }
     .footer-social-text {
         text-align: start;
     }
@@ -152,6 +169,7 @@
         margin-bottom: 0;
     }
 }
+/* DESKTOP (MIN-WIDTH: 1158px) */
 
 @media screen and (min-width: 1158px) {
     .footer {
@@ -160,6 +178,9 @@
     .footer-wrapper {
         display: flex;
         align-items: baseline;
+        width: 1158px;
+        gap: 0;
+        column-gap: 0;
     }
     .footer-info {
         margin-right: 120px;
@@ -167,6 +188,9 @@
     .footer-link:hover,
     .footer-link:focus {
         background-color: #31d0aa;
+    }
+    .footer-form {
+        gap: 24px;
     }
     .footer-form-wrap {
         margin-left: auto;
@@ -178,6 +202,8 @@
     .footer-form-input {
         opacity: 1;
     }
-    
+    .footer-form-input::placeholder {
+        opacity: 1;
+    }
 }
 
