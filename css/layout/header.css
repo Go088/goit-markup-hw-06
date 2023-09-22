@@ -11,9 +11,7 @@
     
     .open-mobile-menu-btn {
         display: block;
-        padding-top: 16px 0;
         border: none;
-        padding: 0;
         background-color: transparent;
         line-height: 0;
     }
@@ -151,6 +149,7 @@
     .open-mobile-menu-btn {
         display: none;
     }
+
     .logo {
         padding: 24px 0;
         margin-right: 120px;
